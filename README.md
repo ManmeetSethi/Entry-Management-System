@@ -24,7 +24,3 @@ The web-app is scripted entirely in Python, with Flask for Frontend.
 https://innovaccer-visiting-system.herokuapp.com/
 
 
-![Image of Yaktocat](https://doc-0g-0o-docs.googleusercontent.com/docs/securesc/dci9nlvbsor92bmqpssnkg6vtstbu75v/cdpaki1somunsikr908uvr5m2abhntle/1574870400000/18081505900313048209/13450949452176015748/1cEd6m6fK3LmZfsJE8JcQtQFgeaJigroZ?e=download&authuser=0&nonce=pj519bom5v5b4&user=13450949452176015748&hash=hd7ut0fk83fjfqhc7ajofnourlsf2pfj)
-
-
-
