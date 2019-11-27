@@ -145,7 +145,6 @@ def checkoutTexts(visitorName, visitorEmail, visitorPhone, hostName, hostAddress
         v=Visitor(visitorName, visitorEmail, visitorPhone, hostName, hostAddress, checkin, checkout)
         checkoutMail(v, v.email, v.phone)
     except Exception as e:
-        print(e)
         flag = 0
 
     return flag
