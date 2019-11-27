@@ -58,7 +58,7 @@ def host_mail(v, Email, phone):
     s.quit()
 
     account_sid = 'ACb02ccce3e826f2eee6882a58018d3581'
-    auth_token = 'fdbb12f43e1b555585d94e633915315a'
+    auth_token = '7b0f06eb6bc304e66765a289d9c616d2'
     client = Client(account_sid, auth_token)
     message_send = client.messages.create(
                                   from_='+14132844994',
@@ -94,7 +94,6 @@ def sendTexts(visitorName, visitorEmail, visitorPhone, hostName, hostAddress, ch
     try:
         host_mail(v, email[0], str(Phone))
     except Exception as e:
-        print(e)
         flag = 0
 
     return flag
@@ -128,7 +127,7 @@ def checkoutMail(v, Email, phone):
     s.quit()
 
     account_sid = 'ACb02ccce3e826f2eee6882a58018d3581'
-    auth_token = 'fdbb12f43e1b555585d94e633915315a'
+    auth_token = '7b0f06eb6bc304e66765a289d9c616d2'
     client = Client(account_sid, auth_token)
     message_send = client.messages.create(
                                   from_='+14132844994',
