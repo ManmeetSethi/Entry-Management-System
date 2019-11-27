@@ -1,6 +1,7 @@
 # Entry-Management-System
 
 ### Try out my take on the entry management system here: 
+https://innovaccer-visiting-system.herokuapp.com/
 
 ### Key Assumptions:
 Enter valid hostname and address as: Rahul, A-1 refer to point 2 for details. 
@@ -19,8 +20,3 @@ When the visitor wants to check-out, a list of (active) visitors is shown, he ch
 The details of all visitors are maintained in the visitor.csv with all relevant details acting as the visitor log.
 
 The web-app is scripted entirely in Python, with Flask for Frontend.
-
-## Heroku Link:
-https://innovaccer-visiting-system.herokuapp.com/
-
-
