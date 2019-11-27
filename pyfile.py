@@ -27,8 +27,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from twilio.rest import Client 
 
-MY_ADDRESS = 'manmeet_sethi@hotmail.com'
-PASSWORD = 'Simar@rock1'
+MY_ADDRESS = 'YOUR_EMAIL_ID'
+PASSWORD = 'PASSWORD'
 
 
 
@@ -60,11 +60,11 @@ def host_mail(v, Email, phone):
 
     s.quit()
 
-    account_sid = 'ACb02ccce3e826f2eee6882a58018d3581'
-    auth_token = '7b0f06eb6bc304e66765a289d9c616d2'
+    account_sid = 'TWILIO_SID'
+    auth_token = 'TWILIO_AUTH_TOKEN'
     client = Client(account_sid, auth_token)
     message_send = client.messages.create(
-                                  from_='+14132844994',
+                                  from_='TWILIO_NO',
                                   body = message,
                                   to = phone
                               )
@@ -130,11 +130,11 @@ def checkoutMail(v, Email, phone):
 
     s.quit()
 
-    account_sid = 'ACb02ccce3e826f2eee6882a58018d3581'
-    auth_token = '7b0f06eb6bc304e66765a289d9c616d2'
+    account_sid = 'TWILIO_SID'
+    auth_token = 'TWILIO_AUTH_TOKEN'
     client = Client(account_sid, auth_token)
     message_send = client.messages.create(
-                                  from_='+14132844994',
+                                  from_='TWILIO_NO',
                                   body = message,
                                   to = phone
                               )
