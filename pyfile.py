@@ -26,8 +26,11 @@ from string import Template
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from twilio.rest import Client 
+
 MY_ADDRESS = 'manmeet_sethi@hotmail.com'
 PASSWORD = 'Simar@rock1'
+
+
 
 def read_template(filename):
     with open(filename, 'r', encoding='utf-8') as template_file:
@@ -69,12 +72,12 @@ def host_mail(v, Email, phone):
 def sendTexts(visitorName, visitorEmail, visitorPhone, hostName, hostAddress, checkin):
     flag = 1
 
-    key = hostName+str(hostAddress)
+    key = str(hostName+str(hostAddress)).lower()
 
     host_df = pd.read_csv('host.csv', names=('Name', 'Phone', 'Email', 'Add'))
     key2=[]
     for index, row in host_df.iterrows():
-        key2.append(row["Name"]+str(row["Add"]))
+        key2.append(str(row["Name"]+str(row["Add"])).lower())
     if key in key2:
         v=Visitor(visitorName, visitorEmail, visitorPhone, hostName, hostAddress, checkin, 'na')
     else:
@@ -94,6 +97,7 @@ def sendTexts(visitorName, visitorEmail, visitorPhone, hostName, hostAddress, ch
     try:
         host_mail(v, email[0], str(Phone))
     except Exception as e:
+        print(e)
         flag = 0
 
     return flag
@@ -141,8 +145,12 @@ def checkoutTexts(visitorName, visitorEmail, visitorPhone, hostName, hostAddress
         v=Visitor(visitorName, visitorEmail, visitorPhone, hostName, hostAddress, checkin, checkout)
         checkoutMail(v, v.email, v.phone)
     except Exception as e:
+        print(e)
         flag = 0
 
     return flag
+
+
+
 
 
